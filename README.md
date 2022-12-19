@@ -23,3 +23,6 @@ The design was created using HTML/CSS/JS, for developing responsive website used
 <li>OOP</li>
 
 <li>Functions</li>
+
+#Template
+![K A P S U L A](https://user-images.githubusercontent.com/98818064/208340475-db31d5ba-f098-4648-9182-0ac0a1a9abe2.png)
