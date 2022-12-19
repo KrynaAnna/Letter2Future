@@ -1,0 +1,35 @@
+#confetti-canvas {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(89, 223, 255, 0.82);
+}
+
+.success {
+    height: 30%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.51);
+    z-index: 1;
+    position: absolute;
+    border: 2px solid rgb(64, 88, 250);
+    border-radius: 20px;
+    left: 25%;
+    top: 35%;
+    mso-border-shadow: yes;
+    padding: 30px;
+}
+
+#rocket {
+    width: 500px;
+    position: absolute;
+    bottom: 35%;
+    left: 41%;
+    z-index: 1;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: #091f4d;
+}

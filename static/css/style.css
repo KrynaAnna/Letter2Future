@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+}
+
+/* container height */
+.start-container {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+/* start-container */
+video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+#time {
+    width: 300px;
+    margin-top: 156px;
+    margin-bottom: 50px;
+
+}
+#arrow {
+    width: 60px;
+    margin: 50px;
+}
+
+/* middle-container */
+.middle-container {
+    height: max-content;
+    background-color: #0d6c74;
+    padding: 4% 18% 4% 18%;
+    border-radius: 400px 0 0 400px;
+    margin: 0 0 0 3%;
+}
+
+input[type="text"], textarea[type="text"], input[type="email"] {
+  background-color : rgba(255, 255, 255, 0.7);
+  color: #0d6c74;
+}
+
+.el-form {
+    margin: 15px 0 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#date, #file  {
+    background-color : rgba(255, 255, 255, 0.9);
+    color: #0d6c74;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 5px 12px 5px 12px;
+}
+
+#clock {
+    position: absolute;
+    top: 800px;
+    right: 50px;
+    opacity: 60%;
+}
+/* third-container */
+.third-container {
+    display: flex;
+    height: max-content;
+    background-image: linear-gradient(#000000, rgb(13, 108, 116));
+    padding: 4% 8% 4% 8%;
+    justify-content: center;
+}
+
+.car {
+    height: 500px;
+    column-width: auto;
+}
+
+.big-logo {
+    column-width: auto;
+    margin-top: 100px;
+}
+/* donation-container */
+.hr-lines{
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 30%;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 30%;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.donation-container {
+    height: max-content;
+    background-image: linear-gradient(#0d6c74, rgba(89, 223, 255, 0.82));
+    padding: 4% 8% 4% 8%;
+
+}
+h1 {
+    margin-bottom: 50px;
+    color: white;
+}
+.row {
+    margin: 0;
+}
+.card {
+    margin: 10px auto;
+}
