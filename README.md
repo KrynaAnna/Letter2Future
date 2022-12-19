@@ -11,7 +11,6 @@ This application functions with the help of the Heroku server, using the open so
 The design was created using HTML/CSS/JS, for developing responsive website used Bootstrap.
 
 # Topics covered
-
 <li>Python</li>
 
 <li>Flask Web Framework, Jinja</li>
@@ -24,5 +23,6 @@ The design was created using HTML/CSS/JS, for developing responsive website used
 
 <li>Functions</li>
 
-#Template
-![K A P S U L A](https://user-images.githubusercontent.com/98818064/208340475-db31d5ba-f098-4648-9182-0ac0a1a9abe2.png)
+
+# Template
+![K A P S U L A ](https://user-images.githubusercontent.com/98818064/208470375-70480953-4b5a-48ac-bba9-4564154dccc0.png)
