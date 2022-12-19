@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Letter2Future</title>
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity=
+            "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- My CSS only -->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <!-- My Fonts only -->
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <a class="navbar-brand" href="/">
+        <img src="../static/images/project/logo1.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        CAPSULE
+      </a>
+    </nav>
+
+    <!-- Start container -->
+    <audio id="myAudio" autoplay loop>
+        <source src="../static/epic.mp3" type="audio/mp3">
+    </audio>
+    <button class="btn btn-outline-secondary" onclick="playAud()" style="right: 5px; top: 60px; position: absolute;">
+        <img src="../static/images/project/unmute.png" style="width: 20px;" alt="unmute">
+    </button>
+    <div class="start-container" >
+        <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="../static/images/project/cosmos.mp4" type="video/mp4">
+        </video>
+        <div class="text-center">
+            <div><img id='time' src="../static/images/project/time.svg" alt=""></div>
+            <div><a href="#middle-container"><img id='arrow' src="../static/images/project/arrow.svg" alt="arrow"></a></div>
+        </div>
+    </div>
+
+    <!-- Middle container -->
+    <div class="middle-container" id="middle-container">
+    <h1 class="text-center">LETTER TO FUTURE</h1>
+        <img id='clock' src="../static/images/project/clock.png" alt="clock">
+        <form action="/" method="post" enctype="multipart/form-data">
+          <div class="el-form row justify-content-between">
+            <div class="col-lg-4 col-sm-12" style="padding-left: 0">
+              <input type="text" class="form-control" placeholder="Your name" name="name"  required>
+            </div>
+            <div class="col-lg-4 col-sm-12" style="padding-left: 0">
+              <input type="email" class="form-control" placeholder="Email" name="recipient" required>
+            </div>
+            <h2 class="col-lg-4 col-sm-12" style="color: #2fd2e0; text-align: center">{{ date }}</h2>
+          </div>
+          <div class="el-form col-lg-12">
+            <textarea type="text" class="form-control" placeholder="Text" rows="15" name="body" required></textarea>
+          </div>
+
+          <div class="el-form row justify-content-between">
+            <div class="el-form col-lg-3 col-sm-12 text-center" style="padding: 0">
+                <input class="input-group" type="date" id="date"  name="date_future" min="{{ tomorrow }}" required>
+            </div>
+            <div class="el-form col-lg-5 col-sm-12 text-center" style="padding: 0">
+                <input class="input-group" type="file" id="file" name="img_url" >
+            </div>
+            <div class="el-form col-lg-3 col-sm-12 text-center" style="padding: 0">
+                <button class="btn btn-info" type="submit" id="send" style="width: 164px">Send</button>
+            </div>
+          </div>
+        </form>
+    </div>
+
+    <!-- Third container -->
+    <div class="third-container row">
+        <h1 class="hr-lines">MISSION</h1>
+        <div id="carouselExampleControls" class="col-lg-7 col-sm-12 car carousel slide " data-bs-ride="carousel">
+          <div class="car carousel-inner carousel-fade">
+            <div class="carousel-item active">
+              <img src="../static/images/project/img01.jpg" class="car d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TRACKING YOUR GOALS</h5>
+                <p>Writing yourself letters helps you to track your goals. There will always be new things we want to learn, and it’s never too late! Encourage your future self to start making progress. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/project/img02.jpg" class="car d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CHECKING YOUR FOCUS</h5>
+                <p>Life is busy. Life is messy, messy, unpredictable madness. And navigating this madness can shift our focus away from the things that matter most. Write your future self a reality check.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/project/img03.jpg" class="car d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CREATE YOUR FUTURE</h5>
+                <p>When you write a letter to your future self, you are forced to find some answers, now.
+                   What do you hope you to have conquered, achieved, and experienced by then?
+                   Enjoy the task.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <a class="col-lg-4 col-sm-12 text-center">
+            <img src="../static/images/project/logo2.svg" class="big-logo" alt="">
+        </a>
+    </div>
+
+    <!-- Donation container -->
+    <div class="donation-container row">
+        <h1 class="hr-lines">DONATION</h1>
+        <div class="container row justify-content-between">
+
+          <div class="card img-fluid align-items-center text-light bg-dark bg-opacity-50 border-0" style="width:350px; padding: 20px">
+            <img class="card-img-top" src="../static/images/project/card1.png" alt="defend" style="width: 200px; margin: 50px">
+            <div class="card-img text-center">
+              <h4 class="card-title">DEFEND</h4>
+              <p class="card-text">Defend children and other vulnerable people from predators on social media across Canada, the United States and around the world.</p>
+              <a href="https://helpusdefend.com/" target="_blank" class="btn btn-outline-info stretched-link">Donate</a>
+            </div>
+          </div>
+
+          <div class="card img-fluid align-items-center bg-light bg-opacity-50 border-0" style="width:350px; padding: 20px">
+            <img class="card-img-top" src="../static/images/project/card2.png" alt="zsu" style="width: 200px; margin: 50px">
+            <div class="card-img text-center">
+              <h4 class="card-title">Come Back Alive</h4>
+              <p class="card-text">Come Back Alive is a foundation that provides support to service members in the Armed Forces of Ukraine.</p>
+              <a href="https://savelife.in.ua/en/" target="_blank" class="btn btn-info stretched-link">Donate</a>
+            </div>
+          </div>
+
+          <div class="card img-fluid align-items-center text-light bg-dark bg-opacity-50 border-0" style="width:350px; padding: 20px">
+            <img class="card-img-top" src="../static/images/project/card3.png" alt="peta" style="width: 200px; margin: 50px">
+            <div class="card-img text-center">
+              <h4 class="card-title">PETA</h4>
+              <p class="card-text">Animals are not ours to experiment on, eat, wear, use for entertainment, or abuse in any other way.</p>
+              <a href="https://www.peta.org/" target="_blank" class="btn btn-outline-info stretched-link">Donate</a>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <nav class="modal-footer bg-light justify-content-center">
+      <a class="navbar-brand">
+        <img src="../static/images/project/map.svg" width="90" height="40" class="d-inline-block align-top" alt=""
+             style="margin: 5px">
+      </a>
+    </nav>
+
+    <script>
+        let aud = document.getElementById("myAudio");
+        let active = "False"
+
+        function playAud() {
+            if (active === "False") {
+                aud.play();
+                active = "True";
+            }
+            else {
+                aud.pause();
+                active = "False";
+            }
+        }
+    </script>
+</body>
+</html>
