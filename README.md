@@ -1,7 +1,7 @@
 ### <a href="http://kryna.pythonanywhere.com/">Use App</a>
 
-# Capsule
-Capsule is a web app that allows anyone to write a letter to their future self.
+# Letter2Future
+Letter2Future is a web app that allows anyone to write a letter to their future self.
 
 # Description
 The main work of the program is based on the Python web framework Flask.
