@@ -2,6 +2,7 @@
 
 # Letter2Future
 Letter2Future is a web app that allows anyone to write a letter to their future self.
+![07](https://user-images.githubusercontent.com/98818064/208551215-88601c76-987b-4ccf-ba65-dbfa56fd83ba.png)
 
 # Description
 The main work of the program is based on the Python web framework Flask.
