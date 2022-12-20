@@ -6,7 +6,7 @@ Letter2Future is a web app that allows anyone to write a letter to their future 
 # Description
 The main work of the program is based on the Python web framework Flask.
 
-Capsule is a web app that allows anyone to write a letter to their future self. 
+Letter2Future is a web app that allows anyone to write a letter to their future self. 
 This application functions with the help of the Pythonanywhere server, using the open source database - SQLite/MySQL. 
 The design was created using HTML/CSS/JS, for developing responsive website used Bootstrap.
 The preliminary template of the site was developed on the web platform - Сanva. The graphic elements were drawn by me in the CorelDraw program.
